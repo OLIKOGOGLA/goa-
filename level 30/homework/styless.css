@@ -1,0 +1,125 @@
+/* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height:1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1% 4%;
+}
+#home.hero {
+    background-color:#333;
+    color: white;
+    margin-top: 5%;
+
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 2%;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration:#333;
+    font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    height: 30vh;
+    color: white;
+    text-align: center;
+    padding: 10% 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.section-about, .projects, .contact {
+    padding: 5% 10%;
+    background-color: white;
+    margin-bottom: 5%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.project {
+    background: #eaeaea;
+    padding: 2%;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.project a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.project a:hover {
+    color: #007BFF;
+}
+
+.contact {
+    background: #f9f9f9;
+    text-align: center;
+}

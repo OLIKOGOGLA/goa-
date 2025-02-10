@@ -1,0 +1,127 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Section with image */
+.image-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.responsive-image {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Content Section */
+.content {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+/* მშობელი div */
+.parent {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue; /* მშობლის div-ის ფერი */
+    display: flex;
+    justify-content: center; /* შვილის მორგება მშობელ div-ში */
+    align-items: center; /* ვერტიკალურად ცენტრირება */
+}
+
+/* შვილი div */
+.child {
+    width: 100px;
+    height: 100px;
+    background-color: green; /* მწვანე ფერი */
+}
+
+
+
+
+
+
+/* მშობელი div */
+.parent {
+    width: 60%;      /* მშობლის სიგანე 60% */
+    height: 340px;   /* მშობლის სიმაღლე */
+    background-color: rgb(4, 0, 241); /* მშობლის ფერი */
+    margin: 50px auto;  /* ცენტრში განლაგება */
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* შვილები განლაგდება ვერტიკალურად */
+    justify-content: space-between;
+}
+
+/* პირველი შვილი div */
+.child1 {
+    width: 100%;          /* 100% მშობლის სიგანიდან */
+    height: 40%;          /* 40% მშობლის სიმაღლიდან */
+    background-color: lightcoral; /* პირველი შვილის ფერი */
+}
+
+/* მეორე შვილი div */
+.child2 {
+    width: 80%;           /* 80% მშობლის სიგანიდან */
+    height: 30%;          /* 30% მშობლის სიმაღლიდან */
+    background-color: lightgreen; /* მეორე შვილის ფერი */
+}
+
+/* მესამე შვილი div */
+.child3 {
+    width: 60%;           /* 60% მშობლის სიგანიდან */
+    height: 20%;          /* 20% მშობლის სიმაღლიდან */
+    background-color: rgb(238, 32, 238); /* მესამე შვილის ფერი */
+}
