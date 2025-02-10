@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>დახვეწილი საიტი</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>თქვენი საიტი</h1>
+
+        <!-- სია -->
+        <ul class="property-list">
+            <li><strong>color:</strong> წითელი</li>
+            <li><strong>font-family:</strong> Arial</li>
+            <li><strong>font-size:</strong> 16px</li>
+            <li><strong>background-color:</strong> #f0f0f0</li>
+            <li><strong>margin:</strong> 20px</li>
+            <li><strong>padding:</strong> 10px</li>
+            <li><strong>border:</strong> 1px solid #ccc</li>
+        </ul>
+
+        <!-- ფორმა -->
+        <form class="styled-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">სახელი:</label>
+                <input type="text" id="name" name="name" placeholder="გთხოვთ, შეიყვანოთ თქვენი სახელი" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">ელ. ფოსტა:</label>
+                <input type="email" id="email" name="email" placeholder="თქვენი ელ. ფოსტა" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">მესიჯი:</label>
+                <textarea id="message" name="message" placeholder="წერილი ..." required></textarea>
+            </div>
+
+            <button type="submit">გაგზავნა</button>
+        </form>
+    </div>
+</body>
+</html>
