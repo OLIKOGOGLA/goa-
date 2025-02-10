@@ -1,0 +1,2 @@
+name = "oliko"
+print
