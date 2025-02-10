@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+}
+
+
+.content {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #333;
+  margin: 20px;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+
+.image-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+img {
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+
+.content p:first-of-type::before {
+  content: "⚡ ";
+  color: #ff6347;
+  font-size: 1.5em;
+}
+
+
+.content p:nth-child(even) {
+  background-color: #eaeaea;
+  padding: 10px;
+  border-radius: 5px;
+}
