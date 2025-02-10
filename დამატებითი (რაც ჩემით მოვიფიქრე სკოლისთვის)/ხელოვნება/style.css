@@ -1,0 +1,136 @@
+/* ზოგადი სტილი */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+header {
+    background-color: #2d4059;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* მთავარი შინაარსი */
+main.content {
+    padding: 50px 0;
+}
+
+.artwork {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.artwork:hover {
+    transform: translateY(-10px);
+}
+
+.artwork-details {
+    padding: 20px;
+    text-align: justify;
+}
+
+.artwork-details h2 {
+    color: #2d4059;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.artwork-details p {
+    font-size: 1.1rem;
+    height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.artwork-image {
+    text-align: center;
+    padding: 20px;
+}
+
+.artwork-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* ისტორიული და კულტურული მნიშვნელობის სექციები */
+h3 {
+    color: #2d4059;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* footer */
+footer {
+    background-color: #2d4059;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .artwork {
+        flex-direction: column;
+    }
+
+    .artwork-details {
+        padding: 15px;
+    }
+
+    .artwork-image {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}

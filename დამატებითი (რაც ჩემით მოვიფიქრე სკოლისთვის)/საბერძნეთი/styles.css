@@ -1,0 +1,132 @@
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: rgba(42, 61, 102, 0.8); /* ნახევრად გამჭვირვალე ფონზე */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  header nav ul li a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+  }
+  
+  /* Main Content Section Styling */
+  section {
+    background-color: rgba(255, 255, 255, 0.8); /* თეთრი ფონდი ნახევრად გამჭვირვალე */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2a3d66;
+    font-weight: bold;
+  }
+  
+  section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
+  
+  section ul {
+    list-style-type: none;
+  }
+  
+  section ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  /* Image Styling */
+  .image {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(42, 61, 102, 0.8);
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #ffcc00;
+    color: #2a3d66;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e6b800;
+  }
+  
