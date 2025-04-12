@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    flex-wrap: wrap;
+}
+
+.a1, .a2, .a3, .a4, .a5, .a6, .a7, .a8, .a9, .a10 {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.a1 { 
+    background-color: red;
+}
+.a1:hover {
+    transform: translate(100px);
+}
+
+.a2 { 
+    background-color: aqua;
+}
+.a2:hover {
+    transform: rotate(77deg);
+}
+
+.a3 { 
+    background-color: black;
+}
+.a3:hover {
+    transform: scale(1.5);
+}
+
+.a4 { 
+    background-color: brown;
+}
+.a4:hover {
+    transform: scaleY(1.5);
+}
+
+.a5 { 
+    background-color: blue;
+}
+.a5:hover {
+    transform: scaleX(1.5); 
+}
+
+.a6 { 
+    background-color: yellow;
+}
+.a6:hover {
+    transform: rotate(45deg);
+}
+
+.a7 { 
+    background-color: lawngreen;
+}
+.a7:hover {
+    transform: translateY(100px); 
+}
+
+.a8 { 
+    background-color: darkred;
+}
+.a8:hover {
+    transform: translateX(-100px); 
+}
+
+.a9 { 
+    background-color: forestgreen;
+}
+.a9:hover {
+    transform: rotate(-45deg);
+}
+
+.a10 { 
+    background-color: indianred;
+}
+.a10:hover {
+    transform: scale(0.8); 
+}

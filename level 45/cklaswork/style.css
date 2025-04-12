@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.goa {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    animation: calke-effect 4s ease-in-out infinite;
+}
+@keyframes goa{
+    0%{
+        transform: scale(10px);
+        background-color: aqua;
+        transform: rotate(100deg);
+    }
+    50%{
+        transform: scale(100px);
+        background-color:blue;
+        transform: rotate(200deg);
+    }
+    100%{
+        transform: scale(200px);
+        background-color:black;
+        transform: rotate(360deg);
+    }
+}
