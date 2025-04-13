@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>დამოკიდებულება - თანამედროვე კრიზისი</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>დამოკიდებულება: თანამედროვე კრიზისი</h1>
+        <div class="nav-buttons">
+            <button onclick="scrollToSection('about')">რა არის დამოკიდებულება?</button>
+            <button onclick="scrollToSection('causes')">რა იწვევს?</button>
+            <button onclick="scrollToSection('effects')">რას იწვევს?</button>
+            <button onclick="scrollToSection('solution')">გამოსავალი</button>
+        </div>
+        
+        <section id="about">
+            <h2>რა არის დამოკიდებულება?</h2>
+            <p>დამოკიდებულება არის <span class="highlight">ქრონიკული დაავადება</span>, რომელიც მოქმედებს ტვინზე და ქცევაზე. ის შეიძლება გამოწვეული იყოს სხვადასხვა ფაქტორებით.</p>
+        </section>
+
+        <section id="causes">
+            <h2>რა იწვევს დამოკიდებულებას?</h2>
+            <p>მიზეზები მრავალფეროვანია, მაგრამ ყველაზე გავრცელებულია:</p>
+            <ul>
+                <li>🧬 გენეტიკური მიდრეკილება</li>
+                <li>🌍 გარემო და სოციალური ზემოქმედება</li>
+                <li>🧠 ფსიქიკური ჯანმრთელობის პრობლემები</li>
+            </ul>
+        </section>
+
+        <section id="effects">
+            <h2>რას იწვევს?</h2>
+            <p>დამოკიდებულება იწვევს:</p>
+            <ul>
+                <li>⚠️ ჯანმრთელობის სერიოზულ პრობლემებს</li>
+                <li>💸 ფინანსურ სირთულეებს</li>
+                <li>💔 ოჯახურ და სოციალურ კონფლიქტებს</li>
+            </ul>
+        </section>
+
+        <section id="solution">
+            <h2>როგორ დავძლიოთ?</h2>
+            <p>არსებობს რამდენიმე მეთოდი:</p>
+            <ul>
+                <li>👨‍⚕️ <span class="highlight">თერაპია</span> და პროფესიონალური დახმარება</li>
+                <li>💊 სპეციალური მედიკამენტები</li>
+                <li>🤝 დამხმარე ჯგუფები და ფსიქოლოგიური მხარდაჭერა</li>
+            </ul>
+        </section>
+
+        <section class="plant">
+            <h2> ინტერნეტ დამოკიდებულება</h2>
+            <p><strong>რა არის:</strong> ინტერნეტ დამოკიდებულება არის მდგომარეობა, როცა ადამიანი ზედმეტ დროს ატარებს ონლაინ აქტივობებში, რაც აზიანებს მის ფსიქიკურ და ფიზიკურ ჯანმრთელობას.</p>
+            <p><strong>რას იწვევს:</strong> ყურადღების დეფიციტს, უძილობას, დეპრესიას, სოციალურ იზოლაციას.</p>
+            <p><strong>როგორ დავძლიოთ:</strong> უნდა შეიზღუდოს ეკრანთან გატარებული დრო, განრიგის დაცვა, აქტიური დასვენება და რეალური კომუნიკაციის წახალისება.</p>
+        </section>
+
+        <section class="plant">
+            <h2> ალკოჰოლიზმი</h2>
+            <p><strong>რა არის:</strong> ალკოჰოლიზმი არის დამოკიდებულება ალკოჰოლურ სასმელებზე, რომელიც ფიზიკურ და ფსიქიკურ პრობლემებს იწვევს.</p>
+            <p><strong>რას იწვევს:</strong> ღვიძლის დაავადებებს, ნერვული სისტემის დაზიანებას, ოჯახურ და სოციალურ კონფლიქტებს.</p>
+            <p><strong>როგორ დავძლიოთ:</strong> აუცილებელია პროფესიონალური დახმარება, რეაბილიტაცია და მხარდაჭერის ჯგუფებში ჩართვა.</p>
+        </section>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

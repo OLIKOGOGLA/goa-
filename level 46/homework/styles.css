@@ -1,0 +1,103 @@
+/* ზოგადი სტილი */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+div {
+    margin: 20px auto;
+}
+
+/* 1. ფონის ფერის ცვლილება */
+.color-change {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation: changeColor 5s forwards;
+}
+
+@keyframes changeColor {
+    to {
+        background-color: rgb(162, 255, 0);
+    }
+}
+
+/* 2. მრგვალი ლურჯი ბურთი, რომელიც ხტუნავს */
+.bouncing-ball {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+/* 3. 360 გრადუსით შემოტრიალება */
+.rotate-box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    animation: rotate 3s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 4. ტექსტის ფერის შეცვლა */
+.color-text {
+    font-size: 40px;
+    animation: changeTextColor 3s infinite;
+}
+
+@keyframes changeTextColor {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: green;
+    }
+}
+
+/* 5. ზომის ცვლილება */
+.resize-box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    animation: resize 4s infinite;
+}
+
+@keyframes resize {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,121 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 80px; /* Чтобы контент не прятался под заголовком */
+    padding-bottom: 30px; /* Чтобы футер был виден */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Стили для заголовка */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #820a06, #e3ee03); /* Градиентный фон */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2rem;
+    z-index: 1000; /* Чтобы заголовок был поверх всего */
+    transition: background-color 0.3s ease;
+}
+
+.sticky-header nav {
+    margin-top: 10px;
+}
+
+.sticky-header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+}
+
+.sticky-header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.sticky-header nav a:hover {
+    color: #feb47b;
+}
+
+/* Меняем фон заголовка при скроллинге */
+.sticky-header.scrolled {
+    background: linear-gradient(to right, #02bd94, #023471);
+}
+
+/* Стили для секторов контента */
+section {
+    margin-bottom: 40px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Стили для галереи изображений */
+.image-gallery .images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Стили для футера */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    font-size: 1rem;
+}

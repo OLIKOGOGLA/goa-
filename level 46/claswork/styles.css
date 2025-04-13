@@ -1,85 +1,83 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-color: #f0f0f0;
     display: flex;
-    align-items: center;
     justify-content: center;
-  }
-  
-  .ball {
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.ball {
     width: 100px;
     height: 100px;
-    background-color: crimson;
+    background-color: #db3434;
     border-radius: 50%;
-    animation: bounce-scale 3s infinite ease-in-out;
-  }
-  
-  
-  @keyframes bounce-scale {
-    0% {
-      transform: scale(1) translateY(0);
+    animation: grow-shrink-move 5s infinite;
+}
+
+@keyframes grow-shrink-move {
+    0%, 100% {
+        transform: scale(1) translateY(0);
     }
     5% {
         transform: scale(1.1) translateY(-30px);
-      }
+    }
     10% {
-        transform: scale(1.2) translateY(0);
-      }
+        transform: scale(1.2) translateY(-60px);
+    }
     15% {
-        transform: scale(1.3) translateY(30px);
-      }
+        transform: scale(1.3) translateY(-90px);
+    }
     20% {
-        transform: scale(1.4) translateY(0);
-      }
+        transform: scale(1.4) translateY(-120px);
+    }
     25% {
-      transform: scale(1.5) translateY(-30px);
-    }   
+        transform: scale(1.5) translateY(-150px);
+    }
     30% {
-        transform: scale(1.6) translateY(-30px);
-      }
+        transform: scale(1.4) translateY(-120px);
+    }
     35% {
-        transform: scale(1.7) translateY(0);
-      }
+        transform: scale(1.3) translateY(-90px);
+    }
     40% {
-        transform: scale(1.8) translateY(30px);
-      }
+        transform: scale(1.2) translateY(-60px);
+    }
     45% {
-        transform: scale(1.9) translateY(0);
-      }
+        transform: scale(1.1) translateY(-30px);
+    }
     50% {
-      transform: scale(2) translateY(0);
+        transform: scale(1) translateY(0);
     }
     55% {
-        transform: scale(1.9) translateY(-30px);
-      }
+        transform: scale(0.9) translateY(30px);
+    }
     60% {
-        transform: scale(1.8) translateY(0);
-      }
+        transform: scale(0.8) translateY(60px);
+    }
     65% {
-        transform: scale(1.7) translateY(30px);
-      }
+        transform: scale(0.7) translateY(90px);
+    }
     70% {
-        transform: scale(1.6) translateY(0);
-      }
+        transform: scale(0.6) translateY(120px);
+    }
     75% {
-      transform: scale(1.5) translateY(30px);
+        transform: scale(0.5) translateY(150px);
     }
     80% {
-        transform: scale(1.4) translateY(-30px);
-      }
-    85% {
-        transform: scale(1.3) translateY(0);
-      }
-    90% {
-        transform: scale(1.2) translateY(30px);
-      }
-    95% {
-        transform: scale(1.1) translateY(0);
-      }
-    100% {
-      transform: scale(1) translateY(0);
+        transform: scale(0.6) translateY(120px);
     }
-  }
-  
+    85% {
+        transform: scale(0.7) translateY(90px);
+    }
+    90% {
+        transform: scale(0.8) translateY(60px);
+    }
+    95% {
+        transform: scale(0.9) translateY(30px);
+   }
+   100%{
+    transform: scale(1.0) translateY(20px)
+   }
+
+}

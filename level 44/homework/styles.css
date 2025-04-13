@@ -1,0 +1,51 @@
+body {
+    background: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    font-family: sans-serif;
+  }
+  h2{
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .box {
+    width: 150px;
+    height: 200px;
+    background-color: #4caf50;
+    transition: all 0.5s ease;
+  }
+  
+  .left {
+    transform: translateX(-50px);
+  }
+  
+  .scale-up {
+    transform: scale(1.5);
+  }
+  
+  .scale-down {
+    transform: scale(0.5);
+  }
+  
+  .diagonal {
+    transform: translate(50px, 50px);
+  }
+  
+  .rotate {
+    transform: rotate(-90deg);
+  }
+  
+  .combo {
+    transform: translateX(50px) rotate(25deg) scale(4);
+  }
+  

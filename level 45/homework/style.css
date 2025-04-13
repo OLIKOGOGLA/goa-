@@ -1,0 +1,108 @@
+/* 1. ფონის ფერის ანიმაცია */
+.color-change {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation: colorAnimation 2s infinite;
+}
+
+@keyframes colorAnimation {
+    0% {
+        background-color: red;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+
+/* 2. ბურთის ხტუნვა */
+.bouncing-ball {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* 3. 360 გრადუსი */
+.rotate-div {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    animation: rotateAnimation 2s infinite;
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 4. ტექსტის ფერის ცვლილება */
+.color-text {
+    font-size: 40px;
+    animation: textColorChange 3s infinite;
+}
+
+@keyframes textColorChange {
+    0% {
+        color: red;
+    }
+    50% {
+        color: yellow;
+    }
+    100% {
+        color: green;
+    }
+}
+
+/* 5. ზომის ცვლილება */
+.resize-div {
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    animation: resizeAnimation 3s infinite;
+}
+
+@keyframes resizeAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* საერთო სტილები */
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+}
+
+.box {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
