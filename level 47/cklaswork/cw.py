@@ -1,0 +1,9 @@
+# #https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/train/python
+# https://www.codewars.com/kata/523b623152af8a30c6000027/train/python
+# https://www.codewars.com/kata/5265326f5fda8eb1160004c8/train/python
+# https://www.codewars.com/kata/55a5befdf16499bffb00007b/solutions/solutions
+# https://www.codewars.com/kata/56dec885c54a926dcd001095/train/python
+# https://www.codewars.com/kata/5625618b1fe21ab49f00001f/solutions/python
+# https://www.codewars.com/kata/57e3f79c9cb119374600046b/solutions/python
+# https://www.codewars.com/kata/5168bb5dfe9a00b126000018/solutions/python
+# https://www.codewars.com/kata/55a5bfaa756cfede78000026/solutions/python

@@ -1,0 +1,65 @@
+/* 1. 4 Cube */
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;
+}
+.cube {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.red { background-color: red; }
+.blue { background-color: blue; }
+.green { background-color: green; }
+.yellow { background-color: yellow; }
+
+/* 2. 5 Div Vertically */
+.container-vertical {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.div {
+    height: 50px;
+    background-color: lightgray;
+    margin: 5px;
+}
+
+/* 3. Paragraph & Wrap */
+.container-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.para {
+    width: 100px;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* 4. 5 Paragraph & Shrink */
+.container-shrink {
+    display: flex;
+    margin-bottom: 30px;
+}
+.para-shrink {
+    width: 200px;
+    background-color: lightcoral;
+    margin: 10px;
+    padding: 10px;
+    flex-shrink: 1;
+}
+
+/* 5. 5 Paragraph & Flex Grow */
+.container-grow {
+    display: flex;
+}
+.para-grow {
+    width: 100px;
+    background-color: lightgreen;
+    margin: 10px;
+    padding: 10px;
+    flex-grow: 1;
+}

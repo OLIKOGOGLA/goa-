@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Boolean და JS ცვლადები</title>
+  <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">(humana)</div>
+    <nav>
+      <ul>
+        <li><a href="#">Work, Pricing, About</a></li>
+        <li><a href="#" class="dot">● work with us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <p>We design independent brands.</p>
+    <button onclick="showMessage()">დააწკაპე ჩემზე</button>
+  </section>
+
+  <section class="gallery">
+    <div class="item"><img src="" alt="img1"></div>
+    <div class="item"><img src="" alt="img2"></div>
+    <div class="item"><img src="" alt="img3"></div>
+    <div class="item"><img src="" alt="img4"></div>
+  </section>
+
+  <script>
+    
+    let name = "Humana";
+    let year = 2025;
+    let isCreative = true;
+    let isOpen = false;
+
+    
+    console.log("name:", name);
+    console.log("year:", year);
+    console.log("isCreative:", isCreative);
+    console.log("isOpen:", isOpen);
+
+    
+    let combined = name + " " + year + " " + isCreative + " " + isOpen;
+    console.log("Combined values:", combined);
+
+    
+    function showMessage() {
+      alert("Გამარჯობა! ეს არის ინლაინ ღილაკი და იავასკრიპტი!");
+    }
+  </script>
+
+</body>
+</html>

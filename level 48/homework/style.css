@@ -1,0 +1,133 @@
+body {
+    background-color: #0b0b2d;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    position: relative; 
+    overflow-x: hidden;
+}
+
+.cube {
+    width: 50px;
+    height: 50px;
+    background-color: #ff5722;
+    margin: 20px auto;
+    animation: move 2s infinite alternate;
+    border-radius: 10px;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}
+
+.gallery {
+    margin: 20px 0;
+}
+
+.buttons button {
+    background-color: #2929ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #1f1fb2;
+    transform: scale(1.05);
+}
+/* animaciebi */
+
+.ball {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: red;
+    top: 50%; 
+    left: 20%;
+}
+
+.blue {
+    background-color: blue;
+    top: 50%; 
+    right: 20%;
+}
+
+.black {
+    background-color: rgb(249, 221, 10);
+    width: 30px;
+    height: 30px;
+    animation: moveBlackBall 5s infinite linear;
+}
+
+@keyframes moveBlackBall {
+    0%, 100% {
+        top: 50%;
+        left: 20%;
+    }
+    50% {
+        top: 50%;
+        left: 80%;
+    }
+}
+/* ანიმაცია ორი */
+.wave-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.wave-ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: teal; 
+    animation: waveEffect 3s infinite ease-in-out;
+}
+
+
+.wave-ball:nth-child(1) {
+    background-color: rgb(252, 138, 138);
+    animation-delay: 0s;
+}
+
+.wave-ball:nth-child(2) {
+    background-color: rgb(148, 187, 255);
+    animation-delay: 0.5s;
+}
+
+.wave-ball:nth-child(3) {
+    background-color: rgb(71, 244, 71);
+    animation-delay: 1s;
+}
+
+.wave-ball:nth-child(4) {
+    background-color: rgb(209, 20, 209);
+    animation-delay: 1.5s;
+}
+
+@keyframes waveEffect {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5); 
+    }
+}
+
