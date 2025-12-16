@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Form + JS</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 40px;
+      transition: 0.3s;
+    }
+
+    input {
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 8px 15px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="myForm">
+    <input type="text" id="myInput" placeholder="ჩაწერე ტექსტი">
+    <button type="submit">გაგზავნა</button>
+  </form>
+
+  <script>
+    const userColor = prompt("შეიყვანე ფონის ფერი (მაგ: lightblue)");
+
+    
+    const form = document.getElementById("myForm");
+    const input = document.getElementById("myInput");
+
+    
+    function handleFormSubmit(event) {
+      event.preventDefault(); 
+
+      const inputValue = input.value;
+
+     
+      console.log("შეყვანილი ტექსტი:", inputValue);
+
+    
+      document.body.style.backgroundColor = userColor || "lightgray";
+
+    
+      input.style.border = "2px solid green";
+      input.style.borderRadius = "10px";
+      input.style.backgroundColor = "#f0fff0";
+    }
+
+    form.addEventListener("submit", handleFormSubmit);
+  </script>
+
+</body>
+</html>

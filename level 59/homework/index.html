@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkbox Comparison</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 40px;
+    }
+
+    .result {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="myForm">
+    <div>
+      <input type="checkbox" id="option1" value="true">
+      <label for="option1">option1</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="option2" value="true">
+      <label for="option2">option2</label>
+    </div>
+
+    <button type="submit">Check result</button>
+  </form>
+
+  <p class="result" id="resultText"></p>
+
+  <script>
+    const form = document.getElementById("myForm");
+    const checkbox1 = document.getElementById("option1");
+    const checkbox2 = document.getElementById("option2");
+    const resultText = document.getElementById("resultText");
+
+    function handleCheck(event) {
+      event.preventDefault(); 
+
+      let value1 = checkbox1.checked;
+      let value2 = checkbox2.checked;
+
+      let result = value1 === value2 && value1 === true;
+
+      let message = "result of the operation is " + result;
+
+      console.log(message);
+      resultText.innerText = message;
+    }
+
+    form.addEventListener("submit", handleCheck);
+  </script>
+
+</body>
+</html>

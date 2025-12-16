@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>JS დავალებები</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    img {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1)  -->
+  <p id="text1">პირველი ტექსტი</p>
+  <div id="box1">მეორე ელემენტი</div>
+  <span id="span1">მესამე ელემენტი</span>
+
+  <hr>
+
+  <!-- 2) -->
+  <button id="myBtn">ძველი ტექსტი</button>
+
+  <hr>
+
+  <!-- 3) -->
+  <h2 id="myTitle">საწყისი სათაური</h2>
+
+  <hr>
+
+  <!-- 4)  -->
+  <img
+    id="myImg"
+    src="https://via.placeholder.com/300"
+    alt="sample image"
+  >
+
+  <hr>
+
+  <!-- 5) -->
+  <h1 id="mainHeading">გამარჯობა JavaScript</h1>
+
+  <script>
+    // 1)
+    let el1 = document.getElementById("text1");
+    let el2 = document.getElementById("box1");
+    let el3 = document.getElementById("span1");
+
+    console.log(el1);
+    console.log(el2);
+    console.log(el3);
+
+    // 2)
+    let btn = document.getElementById("myBtn");
+    btn.innerText = "შეცვლილი ტექსტი";
+    btn.style.backgroundColor = "green";
+    btn.style.color = "white";
+
+    // 3) 
+    let title = document.getElementById("myTitle");
+    title.innerText = "შეცვლილი სათაური JS-ით";
+
+    // 4) 
+    let img = document.getElementById("myImg");
+    img.style.width = "150px";
+    img.style.height = "150px";
+    img.style.borderRadius = "50%";
+
+    // 5) 
+    let h1 = document.getElementById("mainHeading");
+    console.log(h1.innerText);
+  </script>
+
+</body>
+</html>
