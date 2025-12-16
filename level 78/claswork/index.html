@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// =============================================
+//  EXERCISE 9 – Conditional transformation
+// =============================================
+// If the number is even → make it "Even", if odd → make it "Odd"
+// Example: [2, 5, 8, 9] → ["Even", "Odd", "Even", "Odd"]
+
+const nums = [10, 3, 44, 17, 8, 21];
+const evenOrOdd = nums.map(num => num % 2 === 0 ? "Even" : "Odd");
+console.log(evenOrOdd); // → ["Even", "Odd", "Even", "Odd", "Even", "Odd"]
+
+    </script>
+</body>
+</html>

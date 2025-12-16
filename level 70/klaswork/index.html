@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Three JS Examples Together</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    section {
+      border: 2px solid #333;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    img {
+      margin: 10px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h2>1. შექმენით საიტი, სადაც გექნებათ ღილაკი, რომელზე ყოველი დაჭერისას დივში დაემატება ახალი p ელემენტი რაიმე ტექსტით.</h2>
+    <div id="content"></div>
+    <button onclick="addParagraph()">Add Paragraph</button>
+  </section>
+
+  <section>
+    <h2>2. 2. შექმენით საიტი, სადაც ჯავასკრიპტიდან დაამატებთ და გასტილავთ რამდენიმე ელემენტს.</h2>
+    <div id="list"></div>
+    <button onclick="addItem()">Add Item</button>
+    <button onclick="removeItem()">Remove Last Item</button>
+  </section>
+
+
+  <section>
+    <h2>3. შექმენით საიტი, სადაც გექნებათ ღლაკი, რომელზე დაჭერისას გაეშვება ფუნქცია რომელიც ღილაკის თითო დაჭერაზე საიტზე დაამატებს ახალ ფოტოებს.</h2>
+    <div id="gallery"></div>
+    <button onclick="addPhoto()">Add Photo</button>
+  </section>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>

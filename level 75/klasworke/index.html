@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1. შექმენით სახელების სია, რომელსაც გადაუვლით for loop-ით და გამოიტანთ თითოეულ სახელს + მისალმება, 'hello + {name}'.
+2. შექმენით სია პროდუქტების სახელების და for loop-ის მეშვეობით ეს პროდუქტები დაამატეთ საიტზე არსებულ ol-ში. -->
+  <ol id="oll"></ol>
+<script>
+    let name=['dachi','giorgi' ,'vache' , 'dadu']
+    for(let i=0 ;i < name.length; i = i + 1 ) {
+    console.log('hello ' + name[i])}
+    
+    let oll=document.getElementById(oll)
+
+    let produkts=['ყველი' ,'პური', 'კარაქი']
+    for(let i=0 ;i < produkts.length; i = i + 1 );
+
+    let ol=document.createElement(ol)
+    let text=document.createTextNode(produkts[i])
+    
+    ol.appendChild(text)
+    oll.appendChild(ol)
+</script>
+</body>
+</html>

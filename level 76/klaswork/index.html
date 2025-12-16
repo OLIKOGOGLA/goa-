@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  <style>
+    body { font-family: system-ui, Arial; padding: 20px; }
+    .section { margin-bottom: 40px; }
+    #ball {
+      width: 60px;
+      height: 60px;
+      background: #e23;
+      border-radius: 50%;
+      position: relative;
+      top: 0;
+      transition: none; /* ანიმაციას ჩვენ თვითონ ვაკონტროლებთ */
+    }
+    .inputs input { display:block; margin:8px 0; padding:6px; width:220px; }
+    button { padding:8px 14px; font-size:15px; cursor:pointer; }
+  </style>
+  </head>
+  <body>
+<!--1. შექმენით 4 input ელემენტი, სადაც მომხმარებელი შემოიტანს მის საყვარელ კერძებს,
+შემდეგ, js-ის მეშვეობით ეს ინფუთები დაამატეთ სიაში, 
+ბოლოს კი console.log()-ის მეშვეობით გამოიტანეთ მთლიანი სია კონსოლში.-->
+   <div class="section">
+    <div class="inputs">
+      <input class="dish-input" type="text" placeholder="კერძი 1">
+      <input class="dish-input" type="text" placeholder="კერძი 2">
+      <input class="dish-input" type="text" placeholder="კერძი 3">
+      <input class="dish-input" type="text" placeholder="კერძი 4">
+    </div>
+  
+  <button id="addBtn">დამატება</button>
+<!--2. შექმენით საიტი, სადაც გექნებათ ბურთი და ღილაკი, ღილაკზე დაჭერის დრ
+ოს ბურთი უნდა ჩამოვიდეს ქვემოთ, 50 px-ით, შეგიძლიათ გამოიყენოთ positions  ან margins.-->
+  <div class="section">
+
+    <div id="ball"></div>
+    <button id="moveBtn" style="display:block; margin-top:14px;">ბურთის ჩამოწევა</button>
+  </div>
+<!--bonus:-->
+<!--ყოველ ღილაკზე დაჭერის დროს ბურთი უფრო და უფრო ჩამოვიდეს ქვემოთ.-->
+      <h1 class="title">Hello World! </h1>
+      <p id="currentTime"></p>
+      <script >
+      // 1.
+      document.getElementById("addBtn").addEventListener("click", function() {
+      const dishes = [
+        document.getElementById("dish1").value,
+        document.getElementById("dish2").value,
+        document.getElementById("dish3").value,
+        document.getElementById("dish4").value
+      ];
+      
+      console.log("საყვარელი კერძების სია:", dishes);
+    });
+        
+    // 220px    
+    let position = 0;
+
+    document.getElementById("moveBtn").addEventListener("click", function() {
+      position += 50; 
+      document.getElementById("ball").style.top = position + "px";  }) 
+        
+        
+         
+      </script>
+  </body>
+</html>

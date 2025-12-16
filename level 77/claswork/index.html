@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><!-- 1. რიცხვების მასივის მოცემულობით, გამოიყენეთ map() ბრძანება
+console.log-ისთვის, რათა დაიწეროს გაორმაგებული ყოველი რიცხვი.
+2. სტრიქონების მასივის მოცემულობით, გამოიყენეთ map() ბრძანება console.log-ისთვის, 
+რათა გადაკეთდეს თითოეული სტრიქონი დიდ ასოდ.
+3. სტრიქონების მასივის მოცემულობით, გამოიყენეთ map() ბრძანება console.log-ისთვის,
+ რათა დაიწეროს თითოეული სტრიქონის პირველი ასო.
+4. რიცხვების მასივის მოცემულობით, გამოიყენეთ map() ბრძანება console.log-ისთვის
+, რათა შეიქმნას ახალი მასივი, სადაც თითოეული რიცხვი კვადრატშია.
+5. სახელების მასივის მოცემულობით, გამოიყენეთ map() ბრძანება console.log-ისთვის
+, სახელებზე მორგებული მისალოცი წინადადებები. 
+6. მოცემული რიცხვების მასივის შესაქმნელად, შექმენით newList, გამოიყენეთ map()
+ console.log მასივისთვის, სადაც თითოეულ რიცხვს ემატება 5 და გადაიტანეთ ეს
+  რიცხვები newList-ში, ბოლოს console.log(newList).-->
+<script>
+// 1
+const nam =[4,5,2,3,6,7,8,9,1,10]
+nam.map(nam => console.log(nam * 2))
+
+// 2
+const name = ['oliko', 'giorgi','nika','lika']
+name.map(name => console.log(name.toUpperCase()))
+// 3
+name.map(name => console.log(name.charAt(0)))
+// 4
+nam.map(nam => console.log(nam * nam))
+// 5
+name.map(name => console.log("heloo" + name))
+// 6
+const numbers = [1, 2, 3, 4, 5];
+const newList = [];
+
+const newArray = numbers.map(number => {
+  const result = number + 5;
+  console.log(result); 
+  newList.push(result); 
+  return result; 
+});
+</script>
+</body>
+</html>
